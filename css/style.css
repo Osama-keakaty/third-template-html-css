@@ -337,6 +337,9 @@ a {
         gap: 0;
 
     }
+    .header .logo{
+        width: 100%;
+    }
 }
 
 /* !End header */
