@@ -37,8 +37,8 @@ a {
 }
 
 .main-title {
-    padding: 10px;
-    margin: 100px auto;
+    padding: 10px ;
+    margin: 100px auto ;
     border: 2px solid black;
     width: fit-content;
     font-size: 30px;
@@ -454,6 +454,81 @@ border: 2px solid white;
 
 /*! End Landing  */
 
+/*! Start Articles  */
+.articles{
+    padding-top:100px  ;
+    padding-bottom:100px  ;
+}
+.articles .container{
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+   gap: 40px;
+
+}
+.articles .container .box{
+    /* display: flex;
+    flex-direction: column; */
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 6px ;
+    -webkit-border-radius: 6px ;
+    -moz-border-radius: 6px ;
+    -ms-border-radius: 6px ;
+    -o-border-radius: 6px ;
+    overflow: hidden;
+    transition:transform var(--main-transition),box-shadow var(--main-transition);
+    -webkit-transition:transform var(--main-transition),box-shadow var(--main-transition);
+    -moz-transition:transform var(--main-transition),box-shadow var(--main-transition);
+    -ms-transition:transform var(--main-transition),box-shadow var(--main-transition);
+    -o-transition:transform var(--main-transition),box-shadow var(--main-transition);
+}
+
+.articles .container .box:hover{
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+.articles .container .box:hover i{
+    animation: arrow-alt-right 2s linear infinite;
+    -webkit-animation: arrow-alt-right 2s linear infinite;
+}
+.articles .container .box img{
+    width: 100%; /*for the images that are not the same width (in our case every images in the same width)  */
+max-width: 100%;
+}
+
+.articles .content{
+    padding: 20px;
+}
+.articles .content h3{
+    font-size: 20px;
+}
+.articles .content p{
+    margin: 10px 0 0;
+    line-height: 1.5;
+    color: #777;
+}
+.articles .info{
+    border-top: 1px solid #dfdfdf;
+    display: flex;
+    justify-content: space-between;
+padding: 20px;}
+.articles .info a{
+    color:var(--main-color);
+}
+.articles .info i{
+    color: var(--main-color);
+
+}
+
+/*! End Articles  */
+/*! Start gallery  */
+
+
+
+/*! End gallery  */
 /*! Start animation */
 @keyframes up-and-down {
 
@@ -527,6 +602,23 @@ border: 2px solid white;
         -ms-border-radius: 0;
         -o-border-radius: 0;
 
+}
+}
+
+@keyframes arrow-alt-right{
+    0%,10%,30%,60%,100%{
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+20%,50%,70%{
+    transform: translateX(5px);
+    -webkit-transform: translateX(5px);
+    -moz-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    -o-transform: translateX(5px);
 }
 }
 
