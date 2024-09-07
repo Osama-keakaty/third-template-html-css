@@ -13,6 +13,8 @@ The Third Template HTML CSS is a responsive web template that provides a clean a
 2. Navigate to the project directory:  
 ```cd third-template-html-css```
 3. Open ```index.html``` in your web browser to view the template.
+## website preview 
+```https://osama-keakaty.github.io/third-template-html-css/```
 ## Usage
 • Modify the HTML files to suit your needs.  
 • Customize the CSS styles in the ```style.css``` file.  
