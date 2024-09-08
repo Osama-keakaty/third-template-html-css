@@ -751,6 +751,9 @@ button {
     -o-transition: var(--main-transition);
     z-index: -1;
 }
+.features .container .box:hover a::before{
+    width: 100%;
+}
 .features .container .one a::before{
     background-color: red;
 }
@@ -760,9 +763,7 @@ button {
 .features .container .three a::before{
     background-color: var(--main-color);
 }
-.features .container .box:hover a::before{
-    width: 100%;
-}
+
 
 
 
